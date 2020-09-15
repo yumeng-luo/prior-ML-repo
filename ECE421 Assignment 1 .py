@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def loadData():
+#notMNIST.npz also found in same directory :)
     with np.load('notMNIST.npz') as data :
         Data, Target = data ['images'], data['labels']
         posClass = 2
